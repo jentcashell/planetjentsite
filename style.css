@@ -3,6 +3,10 @@ body{
     background-size: 300px;
 	backdrop-filter:blur(3px);
 }
+
+.row{
+    position: absolute;
+}
 .column {
     
     float: left;
@@ -13,6 +17,11 @@ body{
     display: flex;
     justify-content: center;
 }
+/*.col3{
+    display: flex;
+    justify-content: right;
+}*/
+
 h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 250px;
@@ -47,15 +56,23 @@ button:hover{
 .c3{
     transform: scaleX(-1);
     animation: spinAnim02 1s infinite linear;
+    z-index: 15;
 }
 .c1{
     animation: spinAnim01 1s infinite linear;
 }
 
+.webgl_intro{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
 
 .planetJent{
     width: 130%;
     animation: hueAnim 3s infinite;
+    z-index: 10;
 }
 .planetJent:hover{
     width: 170%;
@@ -73,6 +90,9 @@ button:hover{
     100%{transform: rotate(-720deg);}
 }
 
+
+
+/*---------map-----------*/
 .page02{
     background-color:black
 }
@@ -85,7 +105,7 @@ button:hover{
 .planet{
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 1000px;
     /*background: radial-gradient(circle, rgba(91,63,251,1) 0%, rgba(231,255,72,1) 100%);
     border-radius: 55% 45% 63% 37% / 44% 50% 50% 56%;
     animation: planetAnim 4s infinite;*/
@@ -160,7 +180,7 @@ p{
 .swamp{
     position:absolute;
     width:100%;
-    height:100%;
+    height: 1000px;
 }
 .char_swamp{
     position:absolute;
@@ -189,6 +209,7 @@ p{
     100%{transform: scaleX(2)}
 }
 
+/*---------fest-----------*/
 
 .arena_frame{
     overflow: hidden;

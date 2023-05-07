@@ -7,14 +7,14 @@ let camR;
 
 function preload() {
   // Load model with normalise parameter set to true
-  jent01 = loadModel('models/jentsworld_character01_mixamotest.obj', true);
-  //ground = loadImage('assets/ground.jpeg');
-  //ground = loadVideo('assets/interpolation.mp4');
+  jent01 = loadModel('webgl_world/models/jentsworld_character01_mixamotest.obj', true);
+  //ground = loadImage('webgl_world/assets/ground.jpeg');
+  //ground = loadVideo('webgl_world/assets/interpolation.mp4');
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
-  vid = createVideo("assets/interpolation.mp4");
+  vid = createVideo("webgl_world/assets/interpolation.mp4");
   vid.size(400, 400);
   vid.volume(0);
   vid.loop();
