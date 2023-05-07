@@ -1,0 +1,322 @@
+body{
+    background-image: url(images/organalienbg.png);
+    background-size: 300px;
+	backdrop-filter:blur(3px);
+}
+.column {
+    
+    float: left;
+    width: 33.33%;
+    text-align:center
+}
+.c2{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250px;
+    line-height: 180px ;
+}
+button{
+    width: 90%;
+    height: 250px;
+    background-color: white;
+  color: black;
+  border: 2px none;
+  border-radius: 50%;
+    background: radial-gradient(circle, rgba(217,255,20,1) 20%, rgba(196,255,0,0) 75%);
+    font-size: 50px;
+}
+button:hover{
+    font-family:'Times New Roman', Times, serif;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+.portal{
+    position: inherit;
+    width: 300px;
+}
+.c3{
+    transform: scaleX(-1);
+    animation: spinAnim02 1s infinite linear;
+}
+.c1{
+    animation: spinAnim01 1s infinite linear;
+}
+
+
+.planetJent{
+    width: 130%;
+    animation: hueAnim 3s infinite;
+}
+.planetJent:hover{
+    width: 170%;
+}
+@keyframes hueAnim{
+    0%{filter: hue-rotate(0);}
+    100%{filter: hue-rotate(360deg);}
+}
+@keyframes spinAnim01{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(720deg);}
+}
+@keyframes spinAnim02{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-720deg);}
+}
+
+.page02{
+    background-color:black
+}
+
+.pj_map01{
+    position: absolute;
+    width: 100%;
+}
+
+.planet{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    /*background: radial-gradient(circle, rgba(91,63,251,1) 0%, rgba(231,255,72,1) 100%);
+    border-radius: 55% 45% 63% 37% / 44% 50% 50% 56%;
+    animation: planetAnim 4s infinite;*/
+}
+@keyframes planetAnim{
+    0%{border-radius:55% 45% 63% 37% / 44% 50% 50% 56%;}
+    25%{border-radius:60% 40% 75% 25% / 30% 62% 38% 70%;}
+    50%{border-radius:33% 67% 39% 61% / 57% 43% 57% 43%;}
+    75%{border-radius:60% 40% 75% 25% / 30% 62% 38% 70%;}
+    100%{border-radius:55% 45% 63% 37% / 44% 50% 50% 56%;}
+}
+
+p{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
+.mapP{
+    position: absolute;
+    font-size: 35px;
+    text-align: right;
+    transform: translateY(200px);
+    z-index: 2;
+    
+    filter: blur(2px);
+}
+
+.building{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+}
+.img01{
+    top: 5%;
+    left: 30%;
+}
+.img02{
+    top: 45%;
+    left: 50%;
+}
+.img03{
+    top:  10%;
+    left: 60%;
+    z-index: 0;
+}
+.img04{
+    top: 40%;
+    left: 10%;
+    
+}
+.building:hover{
+    transform: scale(120%);
+    animation: buildingAnim01 0.5s infinite;
+}
+@keyframes buildingAnim01{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(720deg);}
+}
+
+
+
+/*---------Swamp-----------*/
+
+.swamp{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.char_swamp{
+    position:absolute;
+    width:300px;
+    height:300px;
+    
+}
+.char_swamp:hover{
+    animation: charAnim01 0.5s infinite;
+}
+.char01{
+    top: 30%;
+    left: 40%;
+}
+.char02{
+    top: 10%;
+    left: 20%;
+    transform: scaleX(-1);
+}
+.char03{
+    top: 60%;
+    left: 30%;
+}
+@keyframes charAnim01{
+    0%{transform: scaleX(1)}
+    100%{transform: scaleX(2)}
+}
+
+
+.arena_frame{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    margin: 0px;
+    width:100%;
+    height:100%;
+    z-index: 10;
+}
+.page03scroll{
+    position: absolute;
+    width:20%;
+    height: 200px;
+    background-color: #0fa;
+    z-index: -3;
+}
+.char_arena{
+    animation: arenaAnim 2s infinite;
+}
+@keyframes arenaAnim{
+    0%{transform: scaleX(1)}
+    100%{transform: scaleX(2)}
+}
+  
+.mount{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.char_mount{
+    position:absolute;
+    width:300px;
+    height:300px;
+    
+}
+.char04{
+    top:50%;
+    transform: scaleX(-1);
+    z-index:3;
+}
+.char05{
+    top:20%;
+    transform: scaleX(-1);
+}
+.char04:hover{
+    
+    animation: charAnim_mount 2.5s infinite;
+    
+}
+.char05:hover{
+    animation: charAnim_mount 2.5s infinite;
+}
+@keyframes charAnim_mount{
+    0%{transform: translate(0)}
+    10%{transform: translate(20px,-20px)}
+    15%{transform: translate(40px,-20px)}
+    20%{transform: translate(40px,-40px)}
+    25%{transform: translate(60px,-40px)}
+    30%{transform: translate(60px,-60px)}
+    35%{transform: translate(80px,-60px)}
+    40%{transform: translate(80px,-80px)}
+    45%{transform: translate(100px,-80px)}
+    50%{transform: translate(100px,-100px)}
+    55%{transform: translate(120px,-100px)}
+    60%{transform: translate(120px,-120px)}
+    65%{transform: translate(140px,-120px)}
+    70%{transform: translate(140px,-140px)}
+    75%{transform: translate(160px,-140px)}
+    80%{transform: translate(160px,-160px)}
+    85%{transform: translate(180px,-160px)}
+    90%{transform: translate(180px,-180px)}
+    95%{transform: translate(200px,-180px)}
+    100%{transform: translate(200px,-200px)}
+}
+
+
+.wp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    z-index:-10;
+}
+
+.wp_bounce{
+    position: absolute;
+    z-index: 20;
+  }
+
+
+
+
+
+.backButton{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    bottom:5px;
+    right:5px;
+    width:300px;
+    height:100px;
+    filter: blur(2px);
+    z-index: 11;
+
+}
+.none{
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(217,255,20,1) 20%, rgba(196,255,0,0) 75%);
+}
+
+
+.thebg{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: hueAnim 0.5s infinite linear;
+    
+  }
+  
+  
+  @keyframes hueAnim {
+    0%{filter: hue-rotate(0);}
+    100%{filter: hue-rotate(360deg);}
+  }
+  
+  
