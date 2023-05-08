@@ -4,6 +4,7 @@ body{
 	backdrop-filter:blur(3px);
     margin:0;
     padding: 0;
+    height: 100vh;
 }
 
 .row{
@@ -155,24 +156,24 @@ p{
 }
 .img02{
     top: 60%;
-    left: 50%;
+    left: 60%;
 }
 .img03{
     top:  10%;
-    left: 60%;
+    left: 10%;
     z-index: 0;
 }
 .img04{
-    top: 40%;
-    left: 10%;
+    top: 55%;
+    left: 15%;
 }
 .img05{
-    top: 20%;
-    left: 20%;
+    top: 30%;
+    left: 45%;
 }
 .img06{
     top: 15%;
-    left: 80%;
+    left: 70%;
 }
 .building:hover{
     transform: scale(120%);
