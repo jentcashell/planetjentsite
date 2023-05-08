@@ -2,6 +2,8 @@ body{
     background-image: url(images/organalienbg.png);
     background-size: 300px;
 	backdrop-filter:blur(3px);
+    margin:0;
+    padding: 0;
 }
 
 .row{
@@ -24,12 +26,12 @@ body{
 
 h1{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 250px;
-    line-height: 180px ;
+    font-size: 50px;
+    line-height: px ;
 }
 button{
     width: 90%;
-    height: 250px;
+    height: 500px;
     background-color: white;
   color: black;
   border: 2px none;
@@ -100,12 +102,13 @@ button:hover{
 .pj_map01{
     position: absolute;
     width: 100%;
+    height: 100vh;
 }
 
 .planet{
     position: absolute;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     /*background: radial-gradient(circle, rgba(91,63,251,1) 0%, rgba(231,255,72,1) 100%);
     border-radius: 55% 45% 63% 37% / 44% 50% 50% 56%;
     animation: planetAnim 4s infinite;*/
@@ -147,11 +150,11 @@ p{
     z-index: 2;
 }
 .img01{
-    top: 5%;
-    left: 30%;
+    top: 2%;
+    left: 35%;
 }
 .img02{
-    top: 45%;
+    top: 60%;
     left: 50%;
 }
 .img03{
@@ -162,7 +165,14 @@ p{
 .img04{
     top: 40%;
     left: 10%;
-    
+}
+.img05{
+    top: 20%;
+    left: 20%;
+}
+.img06{
+    top: 15%;
+    left: 80%;
 }
 .building:hover{
     transform: scale(120%);
@@ -180,7 +190,12 @@ p{
 .swamp{
     position:absolute;
     width:100%;
-    height: 1000px;
+    height: 100vh;
+}
+.swampdiv{
+    position: absolute;
+    width:100%;
+    height: 100vh;
 }
 .char_swamp{
     position:absolute;
@@ -238,7 +253,7 @@ p{
 .mount{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 .char_mount{
     position:absolute;
@@ -286,23 +301,144 @@ p{
     100%{transform: translate(200px,-200px)}
 }
 
-
+/*---------waterpark----------*/
 .wp{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     filter: blur(2px);
     z-index:-10;
 }
 
 .wp_bounce{
     position: absolute;
+    width: 100%;
     z-index: 20;
   }
 
 
+/*---------museum----------*/
+.museumbg{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.m_item{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background:  radial-gradient(circle, rgba(233,253,45,1) 0%, rgba(82,34,195,0) 100%);
+}
+.m_frame{
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    top: -12%;
+}
+.pmu_01{
+    position: inherit;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    font:12px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.mu_row{
+    display: flex;
+}
+.mu_column {
+    flex: 50%;
+    padding: 5%;
+}
+
+.mc1{
+    width: 80%;
+}
+
+.pmu_02_specimen{
+    position: relative;
+    top: 30%;
+    text-align: left;
+    font-size:30px;
+}
+.pmu_02{
+    position: relative;
+    top: 30%;
+    width: 60%;
+    height: 300px;
+    text-align: left;
+    font: 12px;
+    
+    overflow: auto;
+}
+.mu_char{
+    position: relative;
+}
+.spec02{
+    position: relative;
+    width: 300px;
+    top: 30%;
+    left: 50%;
+
+}
+/*---------museum all----------*/
+.museum_all{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.museum_his{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 30%;
+    left: 2.5%;
+}
+.museum_s1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 25%;
+
+}
+.museum_s2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 50%;
+    
+}
+.museum_s3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 75%;
+    
+}
+
+.mAnim:hover{
+    animation: museumAnim 0.5s;
+}
+
+@keyframes museumAnim{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.25);}
+}
 
 
+
+/*---------museum----------*/
 
 .backButton{
     position: absolute;

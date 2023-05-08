@@ -11,7 +11,7 @@ function preload(){
 
 
 function setup(){
-  createCanvas(600, 400);
+  createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
   for(var i = 0; i < n_balles ; i = i + 1){
     x.push(random(0, width));
